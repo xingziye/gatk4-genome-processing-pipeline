@@ -1,13 +1,16 @@
 # gatk4-genome-processing-pipeline
 Workflows used for germline processing in whole genome sequence data.
 
-1. Getting started with Cromwell. You can try to follow instructions on [Five minute Introduction to Cromwell](https://cromwell.readthedocs.io/en/stable/tutorials/FiveMinuteIntro/) and run your first “hello world” workflow locally. This tutorial is based on Cromwell release 49.
+## Tutorial
+This is a step-by-step tutorial designed for Stanford Cloud Computing for Biology and Healthcare class (GENE222/CSC273C/BMI222).
 
-1. It is also a good time to get yourself familiar with WDL. Even though you are not required to write your own workflow, it is not bad thing to get an idea how this pipeline is being implemented. Please see [WDL Documentation](https://support.terra.bio/hc/en-us/sections/360007274612) for more detailed information.
+1. Getting started with Cromwell. You can try to follow instructions in [Five minute Introduction to Cromwell](https://cromwell.readthedocs.io/en/stable/tutorials/FiveMinuteIntro/) to download Cromwell and run your first “hello world” workflow locally. This tutorial is based on Cromwell release 49.
+
+1. It is also a good time to get yourself familiar with WDL. Although you are not required to build your own workflow, it is not a bad thing to get an idea how this pipeline is being implemented. Please see [WDL Documentation](https://support.terra.bio/hc/en-us/sections/360007274612) for more detailed information. Try identify the key steps in `WholeGenomeGermlineSingleSample.wdl` and sub-workflows in `tasks` folder.
 
 1. Follow the steps from [Configuring a Google Project](https://cromwell.readthedocs.io/en/stable/tutorials/PipelinesApi101/#lets-get-started) to setup your credentials and any necessary resources.
 
-1. For the backend of Cromwell, this `google.conf` template file is provided in this repository. Please replace `<google-project-id>` and `<google-bucket-name>` with your corresponding values.
+1. For the backend of Cromwell, this `google.conf` template file is provided in this repository. Please replace `<google-project-id>` and `<google-bucket-name>` with your corresponding values. Try the "hello world" example from the previous step on cloud backend to verify you have valid settings.
 
 1. Now we should be ready to run our workflow on Google Cloud.
 ```console
